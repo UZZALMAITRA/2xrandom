@@ -5,7 +5,7 @@ import requests
 import uuid
 import marshal, base64, zlib
 os.system('clear')
-def Riyad():
+def o():
     os.system('clear')
     print(logo)
     ip = requests.get("https://api.ipify.org").text
@@ -284,4 +284,4 @@ def rcrack(uid,pwx,tl):
     except:
         pass
         
-Riyad()
+o()
