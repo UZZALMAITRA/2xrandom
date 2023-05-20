@@ -6,11 +6,10 @@ import uuid
 import marshal, base64, zlib
 os.system('clear')
 def o():
-    os.system('clear')
-    print(logo)
-    ip = requests.get("https://api.ipify.org").text
+
+    #ip = requests.get("https://api.ipify.org").text
     print("\033[38;5;46--------------------------------------------")
-    jalan("\033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
+   # jalan("\033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
     print("\033[38;5;46--------------------------------------------")
     jalan("\033[97;1m[\033[92;1m1\033[97;1m] \033[92;1mSTART RANDOM CLONING   ")
     print("\033[97;1m[\033[92;1m2\033[97;1m] \033[92;1m ADMIN FACEBOOK I'D  ")
@@ -111,6 +110,7 @@ logo=("""\033[1;97m
 \033[1;92m║ ᗙ  Facebook : MD.RIYAD                  ║
 \033[1;92m║ ᗙ  Version  : 0.2                       ║
 ip = requests.get("https://api.ipify.org").text
+ 
  jalan("\033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
 \033[1;92m║ ᗙ  Team     : GS POWER                  ║ 
 \033[1;92m╚═════════════════════════════════════════╝""")
