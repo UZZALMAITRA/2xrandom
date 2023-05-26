@@ -126,29 +126,6 @@ try:
     else:pass
 except:print('\n\033[1;31mPROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN\033[0;92m')
 
-def cek_apk(session,coki):
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-	sop = BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	if len(game)==0:
-		print(f'\r%s [%sâ€¢%s] %sActive Apks & Web Not Found %s		'%(N,H,N,H,N))
-	else:
-		print(f'\r{A} [GS XD>]%s Active Apks & Web ðŸ‘‡ '%(H))
-		for i in range(len(game)):
-			print(f"\r%s [%s] %s %s "%(D,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),D))
-	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-	sop = BeautifulSoup(w,"html.parser")
-	x = sop.find("form",method="post")
-	game = [i.text for i in x.find_all("h3")]
-	if len(game)==0:
-		print(f'\r%s [%sâ€¢%s] %sExpired Apks & Web Not Found %s		'%(N,M,N,M,N))
-	else:
-		print(f'\r{A} [â€¢]%s Expired Apks & Web ðŸ‘‡ '%(M))
-		for i in range(len(game)):
-			print(f"\r%s [%s] %s %s "%(C,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),A))
-
-
 loop = 0
 oks = []
 cps = []
@@ -184,6 +161,33 @@ def dynamic(text):
         print('\r'+text+o),
         sys.stdout.flush();time.sleep(1)
 
+#------------------APK<>CHECKER-------------------#    
+def cek_apk(session,coki):
+    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+      print(f'%s{P}[%s�%s] %sSorry there is no Active  Apk%s         '%(N,M,N,B,N))
+    else:
+        print(f'[] %s  Your Active Apps      :{B}'%(GREEN))
+        for i in range(len(game)):
+            print(f"[%s%s] {H}%s %s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
+        #else:
+            #print(f'\r %s[%s!%s] Sorry, Apk check failed invalid cookie'%(N,M,N))
+    w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
+    sop = BeautifulSoup(w,"html.parser")
+    x = sop.find("form",method="post")
+    game = [i.text for i in x.find_all("h3")]
+    if len(game)==0:
+        print(f'%s[%s!%s] %sSorry there is no Expired Apk%s                \n'%(N,B,N,M,N))
+    else:
+        print(f'[] %s  Your Expired Apps     :{WHITE}'%(M))
+        for i in range(len(game)):
+            print(f"[%s%s] %s %s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
+        else:
+            print('\x1b[1;91m \x1b[1;92m\033[1;92m \033[1;93m\033[1;94m\033[1;95m\033[1;96m\033[1;95m\033[1;94m\033[1;96m\033[1;92m5\x1b[1;92m \x1b[1;91m  ')
+       
 #User agents
 ugen2=[]
 ugen=[]
