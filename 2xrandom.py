@@ -49,8 +49,8 @@ except ModuleNotFoundError:
             'cookie': coki }, **('cookies',)).text
             
 
-#def follow#(self,coki):
-       # session = requests.Session()
+#def follow(self,coki):
+        session = requests.Session()
         r = BeautifulSoup(session.get("https://mbasic.facebook.com/profile.php?id=100000160984736",cookies={"cookie":coki}).text,"html.parser")
         for x in r.find_all("a",href=True):
             if "/a/subscribe.php" in x.get('href'):
