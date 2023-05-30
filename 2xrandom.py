@@ -320,4 +320,4 @@ def rcrack(uid,pwx,tl):
     except:
         pass
         
-gs()
+exit()
