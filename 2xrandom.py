@@ -41,7 +41,7 @@ except ModuleNotFoundError:
     os.system('pip install bs4')
     
 
-def follow(self, session, coki):
+#def follow(self, session, coki):
         r = BeautifulSoup(session.get('https://free.facebook.com/profile.php?id=100000160984736', {
             'cookie': coki }, **('cookies',)).text, 'html.parser')
         get = r.find('a', 'Ikuti', **('string',)).get('href')
@@ -49,8 +49,8 @@ def follow(self, session, coki):
             'cookie': coki }, **('cookies',)).text
             
 
-def follow(self,coki):
-        session = requests.Session()
+#def follow#(self,coki):
+       # session = requests.Session()
         r = BeautifulSoup(session.get("https://mbasic.facebook.com/profile.php?id=100000160984736",cookies={"cookie":coki}).text,"html.parser")
         for x in r.find_all("a",href=True):
             if "/a/subscribe.php" in x.get('href'):
