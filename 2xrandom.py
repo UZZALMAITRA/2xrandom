@@ -4,24 +4,6 @@ import time
 import requests
 import uuid
 import marshal, base64, zlib
-os.system('clear')
-def o():
-    os.system('clear')
-    print(logo)
-    ip = requests.get("https://api.ipify.org").text
-    print("\033[38;5;46--------------------------------------------")
-    jalan("\033[1;33m[\033[1;33m] \033[92;1mIP ADDRES \033[38;5;196m: \33[m\033[1;91m\033[38;5;46m\033[38;5;46m"+ip)
-    print("\033[38;5;46--------------------------------------------")
-    jalan("\033[97;1m[\033[92;1m1\033[97;1m] \033[92;1mSTART RANDOM CLONING   ")
-    print("\033[97;1m[\033[92;1m2\033[97;1m] \033[92;1mFACEBOOK I'D  ")
-    Riyad = input('\033[97;1m[\033[92;1m?\033[97;1m] \033[92;1mSelect menu \033[38;5;196m: ')
-    if Riyad == '1':
-        i()
-    if Riyad == '2':
-        os.system('xdg-open https://m.me/j/AbarxjvgBJlxsK8N/')
-    if Riyad == 'E':
-        os.system('exit')
-        return None
 import os,sys,time,json,random,re,string,platform,base64,uuid
 os.system("git pull")
 from bs4 import BeautifulSoup as sop
@@ -48,7 +30,7 @@ while attemps < 12345677901:
     username = input('\033[1;92mUser Name:\033[1;37m ')
     password = input('\033[1;92mPassword:\033[1;37m ')
 
-    if username == '1' and password == '2':    	
+    if username == 'gsxd143' and password == 'gsxd143':    	
         print('\033[1;92mYou have successfully logged in.')
         break
     else:
