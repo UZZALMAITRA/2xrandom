@@ -335,6 +335,7 @@ except requests.exceptions.ConnectionError:
 	print('\n No internet connection ...')
 	exit()
 except:exit()
+menu()
 #-----------------------[ SYSTEM-CONTROL ]--------------------#
 if __name__=='__main__':
     try:os.system('git pull')
