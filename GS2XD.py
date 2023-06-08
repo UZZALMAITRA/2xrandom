@@ -591,7 +591,7 @@ class crack:
                     'upgrade-insecure-requests': '1',
                     'origin': 'https://'+_jat,
                     'content-type': 'application/x-www-form-urlencoded',
-                    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, Gecko gibi) Chrome/113.0.0.0 Mobile Safari/537.36,}
+                    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, Gecko gibi) Chrome/113.0.0.0 Mobile Safari/537.36,'}
                     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
                     'x-requested-with': 'XMLHttpRequest',
                     'sec-fetch-site': 'same-origin',
