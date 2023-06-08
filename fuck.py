@@ -118,7 +118,7 @@ def fuck():
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
         user.append(nmp)
-    with ThreadPool(max_workers=100) as GS XD:
+    with ThreadPool(max_workers=100) as turag:
         os.system('clear')
         print(logo)
         tl = str(len(user))
