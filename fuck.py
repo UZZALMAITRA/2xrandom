@@ -109,7 +109,7 @@ def fuck():
     os.system('clear')
     os.system('xdg-open https://www.facebook.com/gsriyad11/')
     print(logo)
-    print('\x1b[1;91m⧼ WELCOME MY FRIENDS RANDOM CLONE ENJOY ⧽ ')
+    print("\x1b[1;91m⧼ WELCOME MY FRIENDS RANDOM CLONE ENJOY ⧽")
     print("\033[38;5;46--------------------------------------------")
     print('[+] SIM CODE BD=> 016 • 017 • 018 • 019 • 013')
     print("\033[38;5;46--------------------------------------------")
